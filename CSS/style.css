@@ -43,13 +43,22 @@ button:hover{
     color: blueviolet;
 }
 
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
 header{
     background-color: rgb(245,245,245);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 header .logo{
+    display: flex;
+    align-items: center;
     margin: 0;
-    padding: 25px 30px;
     font-weight: bold;
     color:blueviolet;
     font-size: 1.5em;
@@ -199,19 +208,23 @@ footer .container{
 }
 
 
-/* fin de mobil*/
+/* fin de mobile first*/
 
 @media(min-width: 850px){
 
     header{
+        padding: 20px 25px;
         position: fixed;
+        flex-direction: row;
+        justify-content: space-between;
         width: 100%;
     }
 
-    header .container{
+/*     header .container{
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
+    } */
 
     header nav{
         flex-direction: row;
